@@ -1,0 +1,33 @@
+ion-title {
+    animation: titleAnimation 5s infinite alternate;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  @keyframes titleAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      opacity: 0.2;
+      transform: translateX(calc(50% - 20px));
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideLeftToRight {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-left-to-right {
+    animation: slideLeftToRight 1s forwards;
+  }
+  
